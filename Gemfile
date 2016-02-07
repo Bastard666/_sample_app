@@ -10,6 +10,11 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
+  gem 'autotest'
+  gem 'autotest-rails-pure'
+  gem 'ZenTest'
+  gem 'autotest-fsevent'
+  gem 'autotest-growl'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -36,7 +41,7 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'webrat'
+  gem 'capybara'
 end
 
 # Use ActiveModel has_secure_password

@@ -29,10 +29,16 @@ RSpec.describe "LayoutLinks", type: :request do
   describe "GET /help" do
     it "should find help page at '/help" do
       get '/help'
-      # puts "response => #{response}"
-      # puts "response body => #{response.body}"
       expect(response).to have_http_status(200)
       assert_generates '/help', controller: 'pages', action: 'help'
+    end
+  end
+
+  describe "GET /signup" do
+    it "should find help page at '/signup" do
+      get '/signup'
+      expect(response).to have_http_status(200)
+      assert_generates '/signup', controller: 'users', action: 'new'
     end
   end
 end

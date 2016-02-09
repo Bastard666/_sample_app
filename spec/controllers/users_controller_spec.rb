@@ -11,7 +11,7 @@ RSpec.describe UsersController, type: :controller do
 
     it "should have the right title" do
       get :new
-      expect(response.body).to have_title('Insription')
+      expect(response.body).to have_title('Inscription')
     end
   end
 

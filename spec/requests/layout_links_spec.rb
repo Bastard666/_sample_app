@@ -41,4 +41,22 @@ RSpec.describe "LayoutLinks", type: :request do
       assert_generates '/signup', controller: 'users', action: 'new'
     end
   end
+
+  describe "Checking pages are visited and links work" do
+    it "should have the right link in the layout" do
+      visit root_path
+      click_link "A propos"
+      expect(page).to have_title("A propos")
+      click_link "Aide"
+      expect(page).to have_title("Aide")
+      click_link "Contact"
+      expect(page).to have_title("Contact")
+      click_link "Accueil"
+      expect(page).to have_title("Accueil")
+      click_link "S'inscrire !"
+      expect(page).to have_title("Inscription")
+
+    end
+  end
+
 end

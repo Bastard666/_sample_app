@@ -29,6 +29,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    annotate (2.7.0)
+      activerecord (>= 3.2, < 6.0)
+      rake (~> 10.4)
     arel (5.0.1.20140414130214)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -161,6 +164,7 @@ PLATFORMS
 
 DEPENDENCIES
   ZenTest
+  annotate
   autotest
   autotest-fsevent
   autotest-growl

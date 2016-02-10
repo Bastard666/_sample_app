@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # get '/contact' => 'pages#contact', as: :contact_path
   # get 'users/new'
 
+  resources :users
+
   root 'pages#home'
   get '/contact' => 'pages#contact'
   get '/about' => 'pages#about'

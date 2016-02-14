@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore sublimetext project file
+/sample_app.sublime-project
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal

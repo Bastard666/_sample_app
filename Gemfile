@@ -4,6 +4,7 @@ ruby '2.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails_12factor'
 gem 'rails', '4.1.8'
+gem 'gravatar_image_tag'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
@@ -43,6 +44,7 @@ end
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'factory_girl_rails', "~> 4.0"
 end
 
 # Use ActiveModel has_secure_password
@@ -56,6 +58,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'byebug', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
